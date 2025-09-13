@@ -43,11 +43,11 @@ export default function Home() {
       <Header />
       <main>
         <section className="bg-[#DCE9E2] px-6 pb-6">
-          <Card className="flex flex-col gap-4 items-center pt-10 bg-transparent border-none shadow-none pb-0">
+          <Card className="flex flex-col gap-4 items-center pt-10 bg-transparent border-none shadow-none pb-0 px-0">
             <p className="text-sm font-bold text-[#00856F] uppercase">
               BOAS-VINDAS A DOCTORCARE 👋
             </p>
-            <h2 className="text-4xl text-[#212529] text-center font-bold max-w-md sm:max-w-full">
+            <h2 className="text-3xl text-[#212529] text-center font-bold max-w-md sm:max-w-full">
               Assistência médica simplificada para todos
             </h2>
           </Card>
