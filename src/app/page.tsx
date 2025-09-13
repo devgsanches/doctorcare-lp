@@ -120,7 +120,7 @@ export default function Home() {
             })}
           </Card>
         </section>
-        <section className="bg-[#FFFAF1] px-6 pb-22">
+        <section className="bg-[#FFFFFF] px-6 pb-20.5">
           <Card className="flex flex-col gap-4 pt-10 bg-transparent border-none shadow-none pb-0">
             <h2 className="text-sm font-bold text-[#00856F] uppercase">
               Sobre nós
@@ -151,7 +151,7 @@ export default function Home() {
           </div>
         </section>
         <section className="bg-[#FFFFFF] px-6 pb-25">
-          <h2 className="text-3xl font-bold text-[#212529] max-w-md sm:max-w-full pt-4">
+          <h2 className="text-3xl font-bold text-[#212529] max-w-md sm:max-w-full mt-6">
             Entre em contato com a gente!
           </h2>
           <Card className="mt-8 space-y-4 bg-transparent border-none shadow-none py-0 gap-0">
