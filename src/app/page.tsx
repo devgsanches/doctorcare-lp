@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { Header } from './components/Header'
+import { Button } from './components/Button'
 
 export default function Home() {
   return (
@@ -19,6 +20,20 @@ export default function Home() {
             Os médicos da DoctorCare vão além dos sintomas para tratar a causa
             raiz de sua doença e proporcionar uma cura a longo prazo.
           </p>
+        </div>
+        <div className="mt-8 flex justify-center">
+          <Button
+            icon={
+              <Image
+                src="/whatsapp.svg"
+                alt="Whatsapp"
+                width={20}
+                height={20}
+              />
+            }
+            text="Agende sua consulta"
+            className="bg-[#00856F] text-white"
+          />
         </div>
       </main>
     </div>
