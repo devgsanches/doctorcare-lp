@@ -39,7 +39,7 @@ export default function Home() {
     },
   ]
   return (
-    <div className=" h-screen ">
+    <div className=" h-screen">
       <Header />
       <main>
         <section className="bg-[#DCE9E2] px-6 pb-6">
@@ -52,7 +52,7 @@ export default function Home() {
             </h2>
           </Card>
           <Card className="mt-6 flex items-center bg-transparent border-none shadow-none py-0">
-            <p className="text-lg text-[#495057] text-center w-[20.4375rem] sm:w-full">
+            <p className="text-lg text-[#495057] text-center max-w-md sm:max-w-full">
               Os médicos da DoctorCare vão além dos sintomas para tratar a causa
               raiz de sua doença e proporcionar uma cura a longo prazo.
             </p>
@@ -120,12 +120,12 @@ export default function Home() {
             })}
           </Card>
         </section>
-        <section className="bg-[#FFFAF1] px-6 pb-25">
+        <section className="bg-[#FFFAF1] px-6 pb-22">
           <Card className="flex flex-col gap-4 pt-10 bg-transparent border-none shadow-none pb-0">
             <h2 className="text-sm font-bold text-[#00856F] uppercase">
               Sobre nós
             </h2>
-            <p className="text-3xl font-bold text-[#212529] max-w-[20.4375rem]">
+            <p className="text-3xl font-bold text-[#212529] max-w-md sm:max-w-full">
               Entenda quem somos e por que existimos
             </p>
           </Card>
@@ -151,7 +151,7 @@ export default function Home() {
           </div>
         </section>
         <section className="bg-[#FFFFFF] px-6 pb-25">
-          <h2 className="text-3xl font-bold text-[#212529] max-w-[20.4375rem] pt-2">
+          <h2 className="text-3xl font-bold text-[#212529] max-w-md sm:max-w-full pt-4">
             Entre em contato com a gente!
           </h2>
           <Card className="mt-8 space-y-4 bg-transparent border-none shadow-none py-0 gap-0">
