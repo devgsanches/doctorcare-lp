@@ -39,7 +39,7 @@ export default function Home() {
     },
   ]
   return (
-    <div className="min-h-screen">
+    <div className="min-h-dvh w-full">
       <Header />
       <main>
         <section className="bg-[#DCE9E2] px-6 pb-6">

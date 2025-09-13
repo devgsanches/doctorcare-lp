@@ -1,6 +1,26 @@
 @import 'tailwindcss';
 @import 'tw-animate-css';
 
+/* Configurações para evitar bordas brancas na orientação horizontal */
+html,
+body {
+  height: 100vh;
+  height: 100dvh; /* Dynamic viewport height para melhor suporte mobile */
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: var(--font-dm-sans), sans-serif;
+}
+
+/* Configurações específicas para mobile landscape */
+@media screen and (orientation: landscape) and (max-height: 500px) {
+  html,
+  body {
+    height: 100vh;
+    height: 100svh; /* Small viewport height para landscape */
+  }
+}
+
 body {
   font-family: var(--font-dm-sans), sans-serif;
 }
@@ -122,5 +142,21 @@ body {
   }
   body {
     @apply bg-background text-foreground;
+    /* Previne scroll horizontal indesejado */
+    overflow-x: hidden;
+  }
+
+  /* Garante que o conteúdo principal ocupe toda a altura */
+  #__next {
+    min-height: 100vh;
+    min-height: 100dvh;
+  }
+
+  /* Configurações específicas para evitar bordas brancas */
+  @supports (height: 100dvh) {
+    html,
+    body {
+      height: 100dvh;
+    }
   }
 }
