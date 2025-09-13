@@ -143,7 +143,7 @@ export default function Home() {
           </Card>
           <div className="pt-15 flex justify-center">
             <Image
-              src={'/doctor.png'}
+              src={'/happy-doctor-holding-a-clipboard-with-patients.png'}
               alt="Médico atendendo família."
               width={327}
               height={282}
@@ -181,7 +181,9 @@ export default function Home() {
           </div>
           <div className="pt-15 flex justify-center">
             <Image
-              src={'/contact.png'}
+              src={
+                '/man-using-modern-smartphone-device-while-on-couch-at-home.jpg'
+              }
               width={364}
               height={213}
               alt="Homem sorrindo mexendo no celular."
