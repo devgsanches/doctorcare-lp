@@ -37,12 +37,12 @@ export default function Home() {
     },
   ]
   return (
-    <div className="w-screen h-screen bg-[#DCE9E2]">
+    <div className=" h-screen ">
       <Header />
-      <main className="px-6">
-        <section>
-          <div className="flex flex-col gap-4 items-center">
-            <p className="text-sm font-bold text-[#00856F]">
+      <main>
+        <section className="bg-[#DCE9E2] px-6 pb-6">
+          <div className="flex flex-col gap-4 items-center pt-10">
+            <p className="text-sm font-bold text-[#00856F] uppercase">
               BOAS-VINDAS A DOCTORCARE 👋
             </p>
             <h2 className="text-4xl text-[#212529] text-center font-bold">
@@ -96,8 +96,8 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="bg-[#F7F9F9]">
-          <div className="flex flex-col items-center mt-25 gap-4">
+        <section className="bg-[#F7F9F9] px-6">
+          <div className="flex flex-col items-center gap-4 pt-10">
             <h2 className="text-sm font-bold text-[#00856F] uppercase">
               Serviços
             </h2>

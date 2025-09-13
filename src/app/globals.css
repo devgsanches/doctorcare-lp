@@ -1,5 +1,9 @@
-@import "tailwindcss";
-@import "tw-animate-css";
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+body {
+  font-family: var(--font-dm-sans), sans-serif;
+}
 
 @custom-variant dark (&:is(.dark *));
 
