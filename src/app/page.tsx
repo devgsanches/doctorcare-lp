@@ -47,7 +47,7 @@ export default function Home() {
             <p className="text-sm font-bold text-[#00856F] uppercase">
               BOAS-VINDAS A DOCTORCARE 👋
             </p>
-            <h2 className="text-4xl text-[#212529] text-center font-bold">
+            <h2 className="text-4xl text-[#212529] text-center font-bold max-w-md sm:max-w-full">
               Assistência médica simplificada para todos
             </h2>
           </Card>
