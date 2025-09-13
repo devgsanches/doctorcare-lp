@@ -76,7 +76,7 @@ export default function Home() {
             <Image
               src={'/ilustration.png'}
               alt="Mulher jovem com blusa verde sorrindo."
-              width={262}
+              width={392}
               height={341}
             />
             <Card className="w-full flex flex-col items-center py-10 bg-[#FFFAF1] rounded-lg gap-12">
