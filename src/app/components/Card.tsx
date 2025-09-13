@@ -1,13 +1,14 @@
 import Image from 'next/image'
+import { Card } from '@/components/ui/card'
 
 interface CardProps {
   title: string
   description: string
 }
 
-export function Card({ title, description }: CardProps) {
+export function ServiceCard({ title, description }: CardProps) {
   return (
-    <div className="bg-[#FFFFFF] rounded-lg p-6 border border-[#DCE9E2] space-y-4">
+    <Card className="bg-[#FFFFFF] rounded-lg p-6 border border-[#DCE9E2] space-y-4">
       <div>
         <Image
           src={'/icon-check.png'}
@@ -21,6 +22,6 @@ export function Card({ title, description }: CardProps) {
       <div>
         <p className="text-[#495057]">{description}</p>
       </div>
-    </div>
+    </Card>
   )
 }
