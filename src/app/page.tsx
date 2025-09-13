@@ -2,6 +2,7 @@ import Image from 'next/image'
 import { Header } from './components/Header'
 import { Button } from './components/Button'
 import { Card } from './components/Card'
+import { Facebook, Instagram, Mail, MapPin, Youtube } from 'lucide-react'
 
 export default function Home() {
   const services = [
@@ -61,8 +62,8 @@ export default function Home() {
                 <Image
                   src="/whatsapp.svg"
                   alt="Whatsapp"
-                  width={20}
-                  height={20}
+                  width={24}
+                  height={24}
                 />
               }
               text="Agende sua consulta"
@@ -96,7 +97,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="bg-[#F7F9F9] px-6">
+        <section className="bg-[#F7F9F9] px-6 pb-6">
           <div className="flex flex-col items-center gap-4 pt-10">
             <h2 className="text-sm font-bold text-[#00856F] uppercase">
               Serviços
@@ -117,7 +118,88 @@ export default function Home() {
             })}
           </div>
         </section>
+        <section className="bg-[#FFFAF1] px-6 pb-25">
+          <div className="flex flex-col gap-4 pt-10">
+            <h2 className="text-sm font-bold text-[#00856F] uppercase">
+              Sobre nós
+            </h2>
+            <p className="text-3xl font-bold text-[#212529] max-w-[20.4375rem]">
+              Entenda quem somos e por que existimos
+            </p>
+          </div>
+          <div className="mt-6">
+            <p className="text-[#495057]">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim. Amet minim mollit
+              non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+              officia consequat duis enim. Amet minim mollit non deserunt
+              ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+              duis enim. Amet minim mollit non deserunt ullamco est sit aliqua
+              dolor do amet sint. Velit officia consequat duis enim. Amet minim
+              mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+            </p>
+          </div>
+          <div className="pt-15 flex justify-center">
+            <Image
+              src={'/doctor.png'}
+              alt="Médico atendendo família."
+              width={327}
+              height={282}
+            />
+          </div>
+        </section>
+        <section className="bg-[#FFFFFF] px-6 pb-25">
+          <h2 className="text-3xl font-bold text-[#212529] max-w-[20.4375rem] pt-2">
+            Entre em contato com a gente!
+          </h2>
+          <div className="mt-8 space-y-4">
+            <div className="flex items-center space-x-2">
+              <MapPin color="#00856F" size={24} />
+              <p className="text-[#495057]">R. Amauri Souza, 346</p>
+            </div>
+            <div className="flex items-center space-x-2">
+              <Mail color="#00856F" size={24} />
+              <p className="text-[#495057]">contato@doctorcare.com</p>
+            </div>
+          </div>
+          <div className="mt-8">
+            <Button
+              icon={
+                <Image
+                  src="/whatsapp.svg"
+                  alt="Whatsapp"
+                  width={24}
+                  height={24}
+                />
+              }
+              text="Agende sua consulta"
+              className="bg-[#00856F] text-white"
+            />
+          </div>
+          <div className="pt-15 flex justify-center">
+            <Image
+              src={'/contact.png'}
+              width={364}
+              height={213}
+              alt="Homem sorrindo mexendo no celular."
+            />
+          </div>
+        </section>
       </main>
+      <footer className="bg-[#00856F] px-6.5 py-15 text-white">
+        <p className="text-4xl">
+          Doctor<span className="font-bold">Care</span>
+        </p>
+        <div className="flex flex-col gap-3 mt-6">
+          <span>©2025 Beautysalon.</span>
+          <span>Todos os direitos reservados.</span>
+        </div>
+        <div className="flex space-x-8.5 mt-8">
+          <Instagram color="#FFFFFF" size={24} />
+          <Facebook color="#FFFFFF" size={24} />
+          <Youtube color="#FFFFFF" size={24} />
+        </div>
+      </footer>
     </div>
   )
 }
