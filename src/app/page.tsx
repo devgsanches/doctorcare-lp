@@ -75,8 +75,8 @@ export default function Home() {
           <div className="flex flex-col items-center mt-15">
             <Image
               src={'/ilustration.png'}
-              alt="Mulher jovem com blusa verde sorrindo."
-              width={392}
+              alt="Mulher jovem sorrindo."
+              width={456}
               height={341}
             />
             <Card className="w-full flex flex-col items-center py-10 bg-[#FFFAF1] rounded-lg gap-12">
